@@ -9,15 +9,19 @@
 	src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
 	data-sap-ui-theme="sap_belize"
 	data-sap-ui-libs="sap.m"
+	data-sap-ui-preload=""
 	data-sap-ui-compatVersion="edge"
 	data-sap-ui-async="true"
-	data-sap-ui-onInit="module:sap-ui5/index"
+	data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
 	data-sap-ui-resourceroots='{
 		"sap-ui5": "./"
 	}'>
     </script>
 </head>
-<body class="sapUiBody">
-    <div id="div"></div>
+<body class="sapUiBody" id="div">
+	<div data-sap-ui-component data-name="sap-ui5" data-id="container" data-settings='{"id" : "sap-ui5"}'>
+
+	</div>
+</div>
 </body>
 </html>
